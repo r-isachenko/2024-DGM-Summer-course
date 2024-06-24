@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Evaluation of likelihood-free models}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Frechet Inception Distance (FID)}{11}{0}{1}
+\beamer@subsectionintoc {1}{2}{Maximum Mean Discrepancy (MMD)}{14}{0}{1}
+\beamer@subsectionintoc {1}{3}{Precision-Recall}{17}{0}{1}
+\beamer@sectionintoc {2}{Langevin dynamic}{22}{0}{2}
+\beamer@sectionintoc {3}{Score matching}{25}{0}{3}

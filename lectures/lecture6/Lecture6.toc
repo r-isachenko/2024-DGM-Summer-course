@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Discrete VAE latent representations}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Vector quantization}{12}{0}{1}
+\beamer@subsectionintoc {1}{2}{Gumbel-softmax for discrete VAE latents}{17}{0}{1}
+\beamer@sectionintoc {2}{ELBO surgery}{23}{0}{2}

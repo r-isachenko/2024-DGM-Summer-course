@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Generative models overview}{4}{0}{1}
+\beamer@sectionintoc {2}{Problem statement}{14}{0}{2}
+\beamer@sectionintoc {3}{Divergence minimization framework}{20}{0}{3}
+\beamer@sectionintoc {4}{Autoregressive modelling}{25}{0}{4}

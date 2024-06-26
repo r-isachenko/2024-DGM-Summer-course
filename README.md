@@ -28,7 +28,7 @@ The course is accompanied by practical tasks that allow you to understand the pr
 | 1 | June, 25 | <b>Lecture 1:</b> Logistics. Generative models overview and motivation. Problem statement. Divergence minimization framework. Autoregressive models. | [slides](lectures/lecture1/Lecture1.pdf) |
 |  |  | <b>Seminar 1:</b> Introduction. Maximum likelihood estimation. Histograms. Bayes theorem. | [slides](seminars/seminar1/seminar1.ipynb) |
 | 2 | June, 27 | <b>Lecture 2:</b> Autoregressive models (PixelCNN). Normalizing Flow (NF) intuition and definition. Forward and reverse KL divergence for NF. Linear NF. Gaussian autoregressive NF. | [slides](lectures/lecture2/Lecture2.pdf) |
-|  |  | <b>Seminar 2:</b> PixelCNN. | [slides](seminars/seminar2/seminar2.ipynb) |
+|  |  | <b>Seminar 2:</b> PixelCNN. | [slides](seminars/seminar2/seminar2.ipynb) <a href="https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/seminars/seminar2/seminar2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>|
 <!---
 | 3 | July, 2 | <b>Lecture 3:</b> Coupling layer (RealNVP). Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. | [slides](lectures/lecture3/Lecture3.pdf) |
 |  |  | <b>Seminar 3:</b> Planar and Radial Flows. Forward vs Reverse KL. | [slides](seminars/seminar3/seminar3.ipynb) |

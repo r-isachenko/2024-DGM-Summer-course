@@ -86,35 +86,93 @@
 	\end{block}
 \end{frame}
 %=======
-\begin{frame}{Recap of previous lecture}
-	\begin{block}{Autoregressive MLP}
-		\vspace{-0.3cm}
- 		\begin{figure}
-		     \centering
-		     \includegraphics[width=0.6\linewidth]{figs/sequential_MLP}
-		 \end{figure}
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+%=======
+\section{Autoregressive models (continued)}
+%=======
+\begin{frame}{Autoregressive models: MLP}
+	For large $j$ the conditional distribution $p(x_j | \bx_{1:j - 1}, \btheta)$ could be infeasible. Moreover, the history $\bx_{1:j-1}$ has non-fixed length.
+	\begin{block}{Markov assumption}
+		\vspace{-0.5cm}
+		\[
+			p(x_j | \bx_{1:j - 1}, \btheta) = p(x_j | \bx_{j - d:j - 1}, \btheta), \quad d \text{ is a fixed model parameter}.
+		\]
 	\end{block}
-	\vspace{-0.3cm}
-
-	\begin{block}{Autoregressive CNN}
-		\begin{minipage}[t]{0.5\columnwidth}
-			\begin{figure}
-				\centering
-	      \includegraphics[width=0.6\linewidth]{figs/pixelcnn1}
-			\end{figure}
+	\vspace{-0.5cm}
+	\begin{block}{Example}
+		\begin{minipage}[t]{0.39\columnwidth}
+			{\small
+			\begin{itemize}
+				\item $d = 2$;
+				\item $x_j \in \{0, 255\}$;
+				\item $\bh_j = \text{MLP}_{\btheta}(x_{j - 1}, x_{j - 2})$;
+				\item $\bpi_j = \text{softmax}(\bh_j)$;
+				\item $p(x_j | x_{j - 1}, x_{j - 2}, \btheta) = \text{Categorical}(\bpi_j)$.
+			\end{itemize}
+			}
 		\end{minipage}%
-		\begin{minipage}[t]{0.5\columnwidth}
-			\begin{figure}
-				\centering
-	      \includegraphics[width=0.45\linewidth]{figs/pixelcnn_0_2}
-			\end{figure}
+		\begin{minipage}[t]{0.61\columnwidth}
+			 \begin{figure}
+			   \centering
+			   \includegraphics[width=1.0\linewidth]{figs/sequential_MLP}
+			 \end{figure}
+			 Is it possible to model continuous distributions instead of discrete one?
 		\end{minipage}
 	\end{block}
 	 \myfootnotewithlink{https://jmtomczak.github.io/blog/2/2\_ARM.html}{image credit: https://jmtomczak.github.io/blog/2/2\_ARM.html}
 \end{frame}
 %=======
-\begin{frame}{Outline}
-	\tableofcontents
+\begin{frame}{Autoregressive models: PixelCNN}
+	\begin{block}{Goal}
+		Model a distribution $\pi(\bx)$ of natural images.
+	\end{block}
+	\begin{block}{Solution}
+		Autoregressive model on 2D pixels
+		\[
+		    p(\bx | \btheta) = \prod_{j=1}^{\text{width} \times \text{height}} p(x_j|\bx_{1:j-1}, \btheta).
+		\]
+		\begin{itemize}
+			\item We need to introduce the ordering of image pixels.
+		    \item The convolution should be \textbf{masked} to make them causal.
+		    \item The image has RGB channels, these dependencies could be addressed.
+		\end{itemize}
+	\end{block}
+	\myfootnotewithlink{https://arxiv.org/abs/1601.06759}{Oord A., Kalchbrenner N., Kavukcuoglu K. Pixel recurrent neural networks, 2016}
+\end{frame}
+%=======
+\begin{frame}{Autoregressive models: PixelCNN}
+	\vspace{-0.2cm}
+	\begin{minipage}[t]{0.5\columnwidth}
+		\begin{block}{Raster ordering}
+			\begin{figure}
+				\centering
+		        \includegraphics[width=0.7\linewidth]{figs/pixelcnn1.png}
+			\end{figure}
+		\end{block}
+		\vspace{-0.5cm}
+		\begin{block}{Mask for the convolution kernel}
+			\begin{figure}
+				\centering
+		        \includegraphics[width=0.35\linewidth]{figs/pixelcnn_0_1.png}
+			\end{figure}
+		\end{block}
+	\end{minipage}%
+	\begin{minipage}[t]{0.5\columnwidth}
+		\begin{block}{Dependencies between pixels}
+			\begin{figure}
+				\centering
+		        \includegraphics[width=0.5\linewidth]{figs/pixelcnn_0_2.png}
+			\end{figure}
+			\vspace{-0.3cm}
+			\begin{figure}
+				\centering
+		        \includegraphics[width=0.65\linewidth]{figs/pixelcnn2.png}
+			\end{figure}
+		\end{block}
+	\end{minipage}
+	\myfootnotewithlink{https://arxiv.org/abs/1601.06759}{Oord A., Kalchbrenner N., Kavukcuoglu K. Pixel recurrent neural networks, 2016}
 \end{frame}
 %=======
 \section{Normalizing flows (NF)}
@@ -581,6 +639,8 @@
 %=======
 \begin{frame}{Summary}
 	\begin{itemize}
+     	\item PixelCNN model use masked causal convolutions (1D or 2D) to get autoregressive model.
+     	\vfill
 		\item Change of variable theorem allows to get the density function of the random variable under the invertible transformation.
 		\vfill
 		\item Normalizing flows transform a simple base distribution to a complex one via a sequence of invertible transformations with tractable Jacobian.

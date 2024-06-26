@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  20 APR 2024 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  26 JUN 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1509,42 +1509,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
 
  [28
 
-]
-<figs/sequential_MLP.png, id=284, 681.54625pt x 250.9375pt>
-File: figs/sequential_MLP.png Graphic file (type png)
-<use figs/sequential_MLP.png>
-Package pdftex.def Info: figs/sequential_MLP.png  used on input line 467.
-(pdftex.def)             Requested size: 187.447pt x 69.01376pt.
- [29
-
- <./figs/sequential_MLP.png>] [30
-
-]
-<figs/pixelcnn1.png, id=299, 210.7875pt x 208.78pt>
-File: figs/pixelcnn1.png Graphic file (type png)
-<use figs/pixelcnn1.png>
-Package pdftex.def Info: figs/pixelcnn1.png  used on input line 518.
-(pdftex.def)             Requested size: 107.55098pt x 106.52734pt.
-<figs/pixelcnn_0_1.png, id=300, 117.43875pt x 121.45375pt>
-File: figs/pixelcnn_0_1.png Graphic file (type png)
-<use figs/pixelcnn_0_1.png>
-Package pdftex.def Info: figs/pixelcnn_0_1.png  used on input line 518.
-(pdftex.def)             Requested size: 53.77666pt x 55.6155pt.
-<figs/pixelcnn_0_2.png, id=301, 189.70876pt x 283.0575pt>
-File: figs/pixelcnn_0_2.png Graphic file (type png)
-<use figs/pixelcnn_0_2.png>
-Package pdftex.def Info: figs/pixelcnn_0_2.png  used on input line 518.
-(pdftex.def)             Requested size: 76.82246pt x 114.6247pt.
-<figs/pixelcnn2.png, id=302, 249.93375pt x 163.61125pt>
-File: figs/pixelcnn2.png Graphic file (type png)
-<use figs/pixelcnn2.png>
-Package pdftex.def Info: figs/pixelcnn2.png  used on input line 518.
-(pdftex.def)             Requested size: 99.86826pt x 65.37593pt.
- [31
-
- <./figs/pixelcnn1.png> <./figs/pixelcnn_0_1.png> <./figs/pixelcnn_0_2.png> <./
-figs/pixelcnn2.png>]
-[32
+] [29
 
 ]
 \tf@nav=\write7
@@ -1570,10 +1535,10 @@ Package rerunfilecheck Info: File `Lecture1.out' has not changed.
 (rerunfilecheck)             Checksum: 30F939832E45D546C579D3D64B2BC132;690.
  ) 
 Here is how much of TeX's memory you used:
- 29165 strings out of 474116
- 596352 string characters out of 5743682
+ 29107 strings out of 474116
+ 595045 string characters out of 5743682
  1941187 words of memory out of 5000000
- 50813 multiletter control sequences out of 15000+600000
+ 50761 multiletter control sequences out of 15000+600000
  581233 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,16n,126p,436b,1328s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1581,25 +1546,24 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
-8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
-.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
-pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.p
-fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on Lecture1.pdf (32 pages, 28795897 bytes).
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on Lecture1.pdf (29 pages, 28528415 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

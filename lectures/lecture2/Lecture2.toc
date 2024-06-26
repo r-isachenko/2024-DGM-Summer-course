@@ -1,5 +1,6 @@
-\beamer@sectionintoc {1}{Normalizing flows (NF)}{7}{0}{1}
-\beamer@sectionintoc {2}{Forward and Reverse KL for NF}{15}{0}{2}
-\beamer@sectionintoc {3}{NF examples}{20}{0}{3}
-\beamer@subsectionintoc {3}{1}{Linear normalizing flows}{21}{0}{3}
-\beamer@subsectionintoc {3}{2}{Gaussian autoregressive NF}{25}{0}{3}
+\beamer@sectionintoc {1}{Autoregressive models (continued)}{6}{0}{1}
+\beamer@sectionintoc {2}{Normalizing flows (NF)}{10}{0}{2}
+\beamer@sectionintoc {3}{Forward and Reverse KL for NF}{18}{0}{3}
+\beamer@sectionintoc {4}{NF examples}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Linear normalizing flows}{24}{0}{4}
+\beamer@subsectionintoc {4}{2}{Gaussian autoregressive NF}{28}{0}{4}

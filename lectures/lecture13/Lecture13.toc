@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{SDE basics}{8}{0}{1}
-\beamer@sectionintoc {2}{Probability flow ODE}{16}{0}{2}
-\beamer@sectionintoc {3}{Reverse SDE}{20}{0}{3}
-\beamer@sectionintoc {4}{Diffusion and Score matching SDEs}{26}{0}{4}

@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Wasserstein distance}{7}{0}{1}
-\beamer@sectionintoc {2}{Lipschitzness of Wasserstein GAN critic}{14}{0}{2}
-\beamer@subsectionintoc {2}{1}{Wasserstein GAN}{15}{0}{2}
-\beamer@subsectionintoc {2}{2}{WGAN with Gradient Penalty}{19}{0}{2}
-\beamer@sectionintoc {3}{f-divergence minimization}{23}{0}{3}

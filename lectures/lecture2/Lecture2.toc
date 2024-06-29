@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Autoregressive models (continued)}{6}{0}{1}
-\beamer@sectionintoc {2}{Normalizing flows (NF)}{10}{0}{2}
-\beamer@sectionintoc {3}{Forward and Reverse KL for NF}{18}{0}{3}

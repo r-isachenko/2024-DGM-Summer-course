@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Learnable VAE prior}{7}{0}{1}
-\beamer@sectionintoc {2}{Likelihood-free learning}{10}{0}{2}
-\beamer@sectionintoc {3}{Generative adversarial networks (GAN)}{14}{0}{3}

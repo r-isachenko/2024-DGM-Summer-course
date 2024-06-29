@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Reverse gaussian diffusion process}{7}{0}{1}
-\beamer@sectionintoc {2}{Gaussian diffusion model as VAE}{11}{0}{2}
-\beamer@sectionintoc {3}{Reparametrization of gaussian diffusion model}{19}{0}{3}

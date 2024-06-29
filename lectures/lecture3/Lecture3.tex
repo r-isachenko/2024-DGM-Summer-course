@@ -111,40 +111,87 @@
 	\myfootnotewithlink{https://arxiv.org/abs/1912.02762}{Papamakarios G. et al. Normalizing flows for probabilistic modeling and inference, 2019} 
 \end{frame}
 %=======
-\begin{frame}{Recap of previous lecture}
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+%=======
+\section{NF examples}
+%=======
+\subsection{Linear normalizing flows}
+%=======
+\begin{frame}{Jacobian structure}
+	\begin{block}{Normalizing flows log-likelihood}
+		\[
+			\log p(\bx|\btheta) = \log p(\bff_{\btheta}(\bx)) + \log \left|\det \left( \frac{\partial \bff_{\btheta}(\bx)}{\partial \bx} \right) \right|
+		\]
+	\end{block}
+	The main challenge is a determinant of the Jacobian matrix.
+	\begin{block}{What is the $det(\bJ)$ in the following cases?}
+		Consider a linear layer $\bz = \bW \bx$, $\bW \in \bbR^{m \times m}$.
+		\begin{enumerate}
+			\item Let $\bz$ be a permutation of $\bx$. 
+			\item Let $z_j$ depend only on $x_j$. 
+			\[
+				\log \left|\det \left( \frac{\partial \bff_{\btheta}(\bx)}{\partial \bx} \right) \right| = \log \left| \prod_{j=1}^m \frac{\partial f_{j, \btheta}(x_j)}{\partial x_j} \right| = \sum_{j=1}^m \log \left|  \frac{\partial f_{j, \btheta}(x_j)}{\partial x_j} \right|.
+			\]
+			\item Let $z_j$ depend only on $\bx_{1:j}$ (autoregressive dependency). 
+		\end{enumerate}
+	\end{block}
+\end{frame}
+%=======
+\begin{frame}{Linear normalizing flows}
+	\[
+		\bz = \bff_{\btheta}(\bx) = \bW \bx, \quad \bW \in \bbR^{m \times m}, \quad \btheta = \bW, \quad \bJ_\bff = \bW^T
+	\]
+	In general, we need $O(m^3)$ to invert matrix.
+	\begin{block}{Invertibility}
+		\begin{itemize}
+			\item Diagonal matrix $O(m)$.
+			\item Triangular matrix $O(m^2)$.
+			\item It is impossible to parametrize all invertible matrices.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Invertible 1x1 conv}
+			
+		$\mathbf{W} \in \mathbb{R}^{c \times c}$ -- kernel of 1x1 convolution with $c$ input and $c$ output channels.
+		The computational complexity of computing or differentiating $\det (\mathbf{W})$ is $O(c^3)$.
+		Cost to compute $\det (\mathbf{W})$ is $O(c^3)$. It should be invertible.
+	\end{block}
+	
+	\myfootnotewithlink{https://arxiv.org/abs/1807.03039}{Kingma D. P., Dhariwal P. Glow: Generative Flow with Invertible 1x1 Convolutions, 2018} 
+\end{frame}
+%=======
+\begin{frame}{Linear normalizing flows}
 	\vspace{-0.5cm}
-	\begin{block}{Flow log-likelihood}
-		\vspace{-0.3cm}
-		\[
-			\log p(\bx|\btheta) = \log p(\bff_{\btheta}(\bx)) + \log  |\det (\bJ_\bff)|
-		\]
-		\vspace{-0.5cm}
+	\[
+		\bz = \bff_{\btheta}(\bx) = \bW \bx, \quad \bW \in \bbR^{m \times m}, \quad \btheta = \bW, \quad \bJ_\bff = \bW^T
+	\]
+	\vspace{-0.7cm}
+	\begin{block}{Matrix decompositions}
+		\begin{itemize}
+			\item \textbf{LU-decomposition}
+			\[
+				\bW = \mathbf{P} \bL \bU,
+			\]
+			where $\mathbf{P}$ is a permutation matrix, $\mathbf{L}$ is lower triangular with positive diagonal, $\mathbf{U}$ is upper triangular with positive diagonal.
+			\item \textbf{QR-decomposition}
+			\[
+				\bW = \bQ \mathbf{R},
+			\]
+			where $\bQ$ is an orthogonal matrix, $\mathbf{R}$ is an upper triangular matrix with positive diagonal.
+		\end{itemize}
 	\end{block}
-	The main challenge is a determinant of the Jacobian.
-	\begin{block}{Linear flows}	
-		\vspace{-0.2cm}
-		\[
-			\bz = \bff_{\btheta}(\bx) = \bW \bx, \quad \bW \in \bbR^{m \times m}, \quad \btheta = \bW, \quad \bJ_\bff = \bW^T
-		\]
-	\end{block}
-	\vspace{-0.3cm}
-	\begin{itemize}
-		\item LU-decomposition
-		\[
-			\bW = \mathbf{P} \bL \bU.
-		\]
-		\item QR-decomposition
-		\[
-			\bW = \bQ \mathbf{R}.
-		\]
-	\end{itemize}
+
 	Decomposition should be done only once in the beggining. Next, we fit decomposed matrices ($\bP/\bL/\bU$ or $\bQ/\bR$).
+
 	\myfootnote{\href{https://arxiv.org/abs/1807.03039}{Kingma D. P., Dhariwal P. Glow: Generative Flow with Invertible 1x1 Convolutions, 2018}  \\
 	\href{https://arxiv.org/abs/1901.11137}{Hoogeboom E., et al. Emerging convolutions for generative normalizing flows, 2019}
 	}
 \end{frame}
 %=======
-\begin{frame}{Recap of previous lecture}
+\subsection{Gaussian autoregressive NF}
+%=======
+\begin{frame}{Gaussian autoregressive model}
 	Consider an autoregressive model
 	\vspace{-0.3cm}
 	{\small
@@ -154,28 +201,96 @@
 		\]
 	}
 	\vspace{-0.5cm}
-	\begin{block}{Gaussian autoregressive NF}
-		\vspace{-0.5cm}
-		\begin{align*}
-			\bx &= \bg_{\btheta}(\bz) \quad \Rightarrow \quad {\color{violet} x_j} = \sigma_j ({\color{violet} \bx_{1:j-1}}) \cdot {\color{teal} z_j} + \mu_j({\color{violet} \bx_{1:j-1}}). \\
-			\bz &= \bff_{\btheta}(\bx) \quad \Rightarrow \quad {\color{teal} z_j} = \left({\color{violet}x_j} - \mu_j({\color{violet}\bx_{1:j-1}}) \right) \cdot \frac{1}{ \sigma_j ({\color{violet}\bx_{1:j-1}})}.
-		\end{align*}
-		\vspace{-0.5cm}
+	\begin{block}{Sampling}
+		\vspace{-0.3cm}
+		\[
+		x_j = \sigma_j (\bx_{1:j-1}) \cdot z_j + \mu_j(\bx_{1:j-1}), \quad z_j \sim \mathcal{N}(0, 1).
+		\]
+		\vspace{-0.7cm}
+	\end{block}
+	\begin{block}{Inverse transform}
+		\vspace{-0.3cm}
+		\[
+		z_j = \left(x_j - \mu_j(\bx_{1:j-1}) \right) \cdot \frac{1}{\sigma_j (\bx_{1:j-1}) }.
+		\]
+		\vspace{-0.4cm}
 	\end{block}
 	\begin{itemize}
 		\item We have an \textbf{invertible} and \textbf{differentiable} transformation from $p(\bz)$ to $p(\bx | \btheta)$.
+		\item It is an autoregressive (AR) NF with the base distribution $p(\bz) = \cN(0, \bI)$!
 		\item Jacobian of such transformation is triangular!
 	\end{itemize}
+	\myfootnotewithlink{https://arxiv.org/abs/1606.04934}{Kingma D. P. et al. Improving Variational Inference with Inverse Autoregressive Flow, 2016} 
+\end{frame}
+%=======
+\begin{frame}{Gaussian autoregressive NF}
+	\vspace{-0.5cm}
+	\begin{align*}
+		\bx &= \bg_{\btheta}(\bz) \quad \Rightarrow \quad {\color{violet} x_j} = \sigma_j ({\color{violet} \bx_{1:j-1}}) \cdot {\color{teal} z_j} + \mu_j({\color{violet} \bx_{1:j-1}}). \\
+		\bz &= \bff_{\btheta}(\bx) \quad \Rightarrow \quad {\color{teal} z_j} = \left({\color{violet}x_j} - \mu_j({\color{violet}\bx_{1:j-1}}) \right) \cdot \frac{1}{ \sigma_j ({\color{violet}\bx_{1:j-1}})}.
+	\end{align*}
 	Generation function $\bg_{\btheta}(\bz)$ is \textbf{sequential}. \\ Inference function $\bff_{\btheta}(\bx)$ is \textbf{not sequential}.
-	
+
+	\begin{block}{Forward KL for NF}
+		\vspace{-0.2cm}
+		\[
+			KL(\pi || p)  = - \bbE_{\pi(\bx)} \left[\log p(\bff_{\btheta}(\bx)) + \log  |\det (\bJ_\bff)|\right] + \text{const} 
+		\]
+		\vspace{-0.5cm}
+		\begin{itemize}
+			\item We need to be able to compute $\bff_{\btheta}(\bx)$ and its Jacobian.
+			\item We need to be able to compute the density $p(\bz)$.
+			\item We don’t need to think about computing the function $\bg_{\btheta}(\bz) = \bff_{\btheta}^{-1}(\bz)$ until we want to sample from the model.
+		\end{itemize}
+	\end{block}
 	\myfootnotewithlink{https://arxiv.org/abs/1705.07057}{Papamakarios G., Pavlakou T., Murray I. Masked Autoregressive Flow for Density Estimation, 2017} 
 \end{frame}
 %=======
-\begin{frame}{Outline}
-    \tableofcontents
+\begin{frame}{Gaussian autoregressive NF}
+	\vspace{-0.5cm}
+	\begin{align*}
+		\bx &= \bg_{\btheta}(\bz) \quad \Rightarrow \quad {\color{violet} x_j} = \sigma_j ({\color{violet} \bx_{1:j-1}}) \cdot {\color{teal} z_j} + \mu_j({\color{violet} \bx_{1:j-1}}). \\
+		\bz &= \bff_{\btheta}(\bx) \quad \Rightarrow \quad {\color{teal} z_j} = \left({\color{violet}x_j} - \mu_j({\color{violet}\bx_{1:j-1}}) \right) \cdot \frac{1}{ \sigma_j ({\color{violet}\bx_{1:j-1}})}.
+	\end{align*}
+	
+	\begin{itemize}
+		\item Sampling is sequential, density estimation is parallel.
+		\item Forward KL is a natural loss.
+	\end{itemize}
+	\vspace{-0.3cm}
+	
+	\begin{minipage}[t]{0.65\columnwidth}
+		\begin{block}{Forward transform: $\bff_{\btheta}(\bx)$}
+			\[
+				z_j = (x_j - \mu_j(\bx_{1:j-1})) \cdot \frac{1}{\sigma_j (\bx_{1:j-1}) }
+			\]
+			\vspace{-0.4cm}
+		\end{block}
+	\end{minipage}% 
+	\begin{minipage}[t]{0.35\columnwidth}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=.9\linewidth]{figs/af_iaf_explained_2.png}
+		\end{figure}
+	\end{minipage} \\
+	
+	\begin{minipage}[t]{0.65\columnwidth}
+		\begin{block}{Inverse transform: $\bg_{\btheta}(\bz)$}
+			\[
+			x_j = \sigma_j (\bx_{1:j-1}) \cdot z_j + \mu_j(\bx_{1:j-1})
+			\]
+		\end{block}
+	\end{minipage}%
+	\begin{minipage}[t]{0.35\columnwidth}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=.9\linewidth]{figs/af_iaf_explained_1.png}
+		\end{figure}
+	\end{minipage}
+	\myfootnotewithlink{https://blog.evjang.com/2018/01/nf2.html}{image credit: https://blog.evjang.com/2018/01/nf2.html}
 \end{frame}
 %=======
-\section{RealNVP: coupling layer}
+\subsection{RealNVP: coupling layer}
 %=======
 \begin{frame}{RealNVP}
 	\vspace{-0.5cm}
@@ -426,6 +541,10 @@
 %=======
 \begin{frame}{Summary}
 	\begin{itemize}
+		\item Linear NF try to parametrize set of invertible matrices via matrix decompositions.
+		\vfill
+		\item Gaussian autoregressive NF is an autoregressive model with triangular Jacobian. It has fast inference function and slow generation function. Forward KL is a natural loss function.
+		\vfill 
 		\item The RealNVP coupling layer is an effective type of NF (special case of AR NF) that has fast inference and generation modes.
 		\vfill
 		\item Continuous-in-time NF uses neural ODE to define continuous dynamic $\bz(t)$. It has less functional restrictions.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  27 MAR 2024 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  29 JUN 2024 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,41 +1287,63 @@ Package pdftex.def Info: ../utils/aimasterslogo.png  used on input line 9.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../util
 s/aimasterslogo.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 38
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 42
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 38.
+ut line 42.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 38.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 38.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 38.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 42.
  [2
 
 ]
-Overfull \hbox (2.61206pt too wide) detected at line 65
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 69.
+
+Overfull \hbox (3.67715pt too wide) detected at line 69
+\OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\OT1/cmss/bx/n/10 x\OMS/cmsy/m/n/1
+0 j[]\OT1/cmss/m/n/10 ) = [] \OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\OT1/
+mathkerncmss/m/sl/10 x[]\OMS/cmsy/m/n/10 j\OT1/cmss/bx/n/10 x[]\OML/cmm/m/it/10
+ ; []\OT1/cmss/m/n/10 )\OML/cmm/m/it/10 ;  \OT1/mathkerncmss/m/sl/10 p\OT1/cmss
+/m/n/10 (\OT1/mathkerncmss/m/sl/10 x[]\OMS/cmsy/m/n/10 j\OT1/cmss/bx/n/10 x[]\O
+ML/cmm/m/it/10 ; []\OT1/cmss/m/n/10 ) = \OMS/cmsy/m/n/10 N [] \OML/cmm/m/it/10 
+:
+ []
+
+[3
+
+] [4
+
+]
+Overfull \hbox (2.61206pt too wide) detected at line 125
 [] \OT1/cmss/m/n/10.95 = \OT1/cmss/bx/n/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/cmss
 /bx/n/10.95 z\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/1
 0.95 )\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/10.95 )
@@ -1335,33 +1357,23 @@ cmsy/m/n/10.95 ^^A \OT1/cmss/bx/n/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/
  []
 
 
-Overfull \vbox (4.46118pt too high) detected at line 65
+Overfull \vbox (4.46118pt too high) detected at line 125
  []
 
-[3
+[5
 
 ]
-Overfull \vbox (4.27187pt too high) detected at line 89
+Overfull \vbox (4.27187pt too high) detected at line 149
  []
 
-[4
+[6
 
-] (./Lecture4.toc) [5
+] (./Lecture4.toc) [7
 
-] (./Lecture4.toc) [6
+] (./Lecture4.toc) [8
 
 ]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 132.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 132.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 132.
-
-
-Overfull \hbox (13.06859pt too wide) detected at line 132
+Overfull \hbox (13.06859pt too wide) detected at line 192
 [] \OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\OT1/cmss/bx/n/10 x\OMS/cmsy/m/
 n/10 j[]\OT1/cmss/m/n/10 ) = [] \OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\O
 T1/cmss/bx/n/10 z\OT1/cmss/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [][] [] [] \OT1/mathke
@@ -1369,13 +1381,13 @@ rncmss/m/sl/10 dt
  []
 
 
-Overfull \vbox (7.66791pt too high) detected at line 132
+Overfull \vbox (7.66791pt too high) detected at line 192
  []
 
-[7
+[9
 
 ]
-Overfull \hbox (0.55013pt too wide) detected at line 164
+Overfull \hbox (0.55013pt too wide) detected at line 224
 [] \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmss/bx/n/10.95 a[]\OT1/cm
 ss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/10.95 )[] \OMS/cmsy/m
 /n/10.95 ^^A []\OT1/cmss/m/n/10.95 ;  [] = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmss/bx/
@@ -1383,26 +1395,26 @@ n/10.95 a[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/10.
 95 )[] \OMS/cmsy/m/n/10.95 ^^A []\OML/cmm/m/it/10.95 :
  []
 
-[8
+[10
 
 ]
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 19
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 25
 3.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <9> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 193.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 253.
 
-[9
+[11
 
-] (./Lecture4.toc) [10
+] (./Lecture4.toc) [12
 
-] [11
+] [13
 
-] [12
+] [14
 
 ]
-Overfull \hbox (8.81055pt too wide) detected at line 259
+Overfull \hbox (8.81055pt too wide) detected at line 319
 [][] \OT1/cmss/m/n/10.95 = [] \OT1/mathkerncmss/m/sl/10.95 p\OT1/cmss/m/n/10.95
  (\OT1/cmss/bx/n/10.95 X\OMS/cmsy/m/n/10.95 j[]\OT1/cmss/m/n/10.95 ) = [] [] \O
 T1/mathkerncmss/m/sl/10.95 p\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 x[]\OMS/c
@@ -1411,40 +1423,40 @@ p\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 x[]\OMS/cmsy/m/n/10.95 j[]\OT1/cmss/
 m/n/10.95 )\OML/cmm/m/it/10.95 :
  []
 
-[13
-
-]
-<figs/mixture_of_gaussians.png, id=162, 477.785pt x 450.68375pt>
-File: figs/mixture_of_gaussians.png Graphic file (type png)
-<use figs/mixture_of_gaussians.png>
-Package pdftex.def Info: figs/mixture_of_gaussians.png  used on input line 295.
-
-(pdftex.def)             Requested size: 103.70961pt x 97.82349pt.
-<figs/pca.png, id=163, 485.815pt x 390.96063pt>
-File: figs/pca.png Graphic file (type png)
-<use figs/pca.png>
-Package pdftex.def Info: figs/pca.png  used on input line 295.
-(pdftex.def)             Requested size: 114.00377pt x 91.7445pt.
- [14
-
- <./figs/mixture_of_gaussians.png> <./figs/pca.png>]
-Overfull \vbox (21.11433pt too high) detected at line 314
- []
-
 [15
 
 ]
-<figs/lvm_diagram.png, id=177, 379.4175pt x 163.5711pt>
-File: figs/lvm_diagram.png Graphic file (type png)
-<use figs/lvm_diagram.png>
-Package pdftex.def Info: figs/lvm_diagram.png  used on input line 330.
-(pdftex.def)             Requested size: 230.46739pt x 99.3589pt.
+<figs/mixture_of_gaussians.png, id=178, 477.785pt x 450.68375pt>
+File: figs/mixture_of_gaussians.png Graphic file (type png)
+<use figs/mixture_of_gaussians.png>
+Package pdftex.def Info: figs/mixture_of_gaussians.png  used on input line 355.
+
+(pdftex.def)             Requested size: 103.70961pt x 97.82349pt.
+<figs/pca.png, id=179, 485.815pt x 390.96063pt>
+File: figs/pca.png Graphic file (type png)
+<use figs/pca.png>
+Package pdftex.def Info: figs/pca.png  used on input line 355.
+(pdftex.def)             Requested size: 114.00377pt x 91.7445pt.
  [16
 
- <./figs/lvm_diagram.png>] (./Lecture4.toc) [17
+ <./figs/mixture_of_gaussians.png> <./figs/pca.png>]
+Overfull \vbox (21.11433pt too high) detected at line 374
+ []
+
+[17
 
 ]
-Overfull \hbox (14.64561pt too wide) detected at line 359
+<figs/lvm_diagram.png, id=194, 379.4175pt x 163.5711pt>
+File: figs/lvm_diagram.png Graphic file (type png)
+<use figs/lvm_diagram.png>
+Package pdftex.def Info: figs/lvm_diagram.png  used on input line 390.
+(pdftex.def)             Requested size: 230.46739pt x 99.3589pt.
+ [18
+
+ <./figs/lvm_diagram.png>] (./Lecture4.toc) [19
+
+]
+Overfull \hbox (14.64561pt too wide) detected at line 419
  []$[]  \OMS/cmsy/m/n/10.95 L\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 
 q\OML/cmm/m/it/10.95 ; []\OT1/cmss/m/n/10.95 ) = [] \OT1/mathkerncmss/m/sl/10.9
 5 q\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 z\OT1/cmss/m/n/10.95 ) [] []\OT1/m
@@ -1454,15 +1466,15 @@ thkerncmss/m/sl/10.95 q\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/10.95 z\OT1/cmss/m/n
 n/10.95 =$ 
  []
 
-[18
+[20
 
 ]
-Overfull \vbox (13.14491pt too high) detected at line 386
+Overfull \vbox (13.14491pt too high) detected at line 446
  []
 
-[19
+[21
 
-] [20
+] [22
 
 ]
 \tf@nav=\write7
@@ -1484,20 +1496,17 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.83pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Lecture4.out' has not changed.
 (rerunfilecheck)             Checksum: 2CB0971B043EE56D8714D7470DFA0F5B;643.
  ) 
 Here is how much of TeX's memory you used:
- 28804 strings out of 474116
- 588349 string characters out of 5743682
- 1941187 words of memory out of 5000000
- 50470 multiletter control sequences out of 15000+600000
+ 28815 strings out of 474116
+ 588488 string characters out of 5743682
+ 1942187 words of memory out of 5000000
+ 50477 multiletter control sequences out of 15000+600000
  585345 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,18n,126p,436b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,18n,126p,436b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -1518,15 +1527,16 @@ bx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 si10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 si8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
 i9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on Lecture4.pdf (20 pages, 1431393 bytes).
+0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on Lecture4.pdf (22 pages, 1446598 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

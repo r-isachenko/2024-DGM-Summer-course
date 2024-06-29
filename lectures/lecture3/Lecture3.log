@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  24 APR 2024 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.23)  29 JUN 2024 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,7 +1278,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <35> not available
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <35> not available
 (Font)              size <35.83> substituted on input line 13.
 
-<../utils/aimasterslogo.png, id=45, 770.88pt x 768.8725pt>
+<../utils/aimasterslogo.png, id=57, 770.88pt x 768.8725pt>
 File: ../utils/aimasterslogo.png Graphic file (type png)
 <use ../utils/aimasterslogo.png>
 Package pdftex.def Info: ../utils/aimasterslogo.png  used on input line 13.
@@ -1287,72 +1287,106 @@ Package pdftex.def Info: ../utils/aimasterslogo.png  used on input line 13.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../util
 s/aimasterslogo.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+<figs/sequential_MLP.png, id=69, 681.54625pt x 250.9375pt>
+File: figs/sequential_MLP.png Graphic file (type png)
+<use figs/sequential_MLP.png>
+Package pdftex.def Info: figs/sequential_MLP.png  used on input line 40.
+(pdftex.def)             Requested size: 184.3758pt x 67.8842pt.
+<figs/pixelcnn1.png, id=70, 210.7875pt x 208.78pt>
+File: figs/pixelcnn1.png Graphic file (type png)
+<use figs/pixelcnn1.png>
+Package pdftex.def Info: figs/pixelcnn1.png  used on input line 40.
+(pdftex.def)             Requested size: 92.18788pt x 91.31233pt.
+<figs/pixelcnn_0_2.png, id=71, 189.70876pt x 283.0575pt>
+File: figs/pixelcnn_0_2.png Graphic file (type png)
+<use figs/pixelcnn_0_2.png>
+Package pdftex.def Info: figs/pixelcnn_0_2.png  used on input line 40.
+(pdftex.def)             Requested size: 69.13974pt x 103.16179pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 37
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 40
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 37.
+ut line 40.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-)
+) [2
+
+ <./figs/sequential_MLP.png> <./figs/pixelcnn1.png> <./figs/pixelcnn_0_2.png>]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 37.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 37.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 37.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 64.
 
-Overfull \hbox (3.87845pt too wide) detected at line 37
+Overfull \hbox (3.87845pt too wide) detected at line 64
 []
- []
-
-[2
-
-]
-<figs/flows_how2.png, id=72, 1023.825pt x 538.01pt>
-File: figs/flows_how2.png Graphic file (type png)
-<use figs/flows_how2.png>
-Package pdftex.def Info: figs/flows_how2.png  used on input line 55.
-(pdftex.def)             Requested size: 261.19826pt x 137.2523pt.
-
-Overfull \vbox (14.91727pt too high) detected at line 55
  []
 
 [3
 
- <./figs/flows_how2.png>] [4
+]
+<figs/flows_how2.png, id=97, 1023.825pt x 538.01pt>
+File: figs/flows_how2.png Graphic file (type png)
+<use figs/flows_how2.png>
+Package pdftex.def Info: figs/flows_how2.png  used on input line 82.
+(pdftex.def)             Requested size: 261.19826pt x 137.2523pt.
 
-] [5
+Overfull \vbox (14.91727pt too high) detected at line 82
+ []
+
+[4
+
+ <./figs/flows_how2.png>] [5
+
+] (./Lecture3.toc) [6
+
+] (./Lecture3.toc) [7
+
+]
+(./Lecture3.toc) [8
+
+]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 140.
+
+ [9
+
+] [10
+
+] [11
+
+] (./Lecture3.toc) [12
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 145.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 145.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 145.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
 
 
-Overfull \hbox (3.67715pt too wide) detected at line 145
+Overfull \hbox (3.67715pt too wide) detected at line 224
 \OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\OT1/cmss/bx/n/10 x\OMS/cmsy/m/n/1
 0 j[]\OT1/cmss/m/n/10 ) = [] \OT1/mathkerncmss/m/sl/10 p\OT1/cmss/m/n/10 (\OT1/
 mathkerncmss/m/sl/10 x[]\OMS/cmsy/m/n/10 j\OT1/cmss/bx/n/10 x[]\OML/cmm/m/it/10
@@ -1362,46 +1396,58 @@ ML/cmm/m/it/10 ; []\OT1/cmss/m/n/10 ) = \OMS/cmsy/m/n/10 N [] \OML/cmm/m/it/10
 :
  []
 
-[6
-
-] (./Lecture3.toc) [7
-
-] (./Lecture3.toc) [8
-
-]
-<figs/realnvp_masking.png, id=124, 616.3025pt x 282.05376pt>
-File: figs/realnvp_masking.png Graphic file (type png)
-<use figs/realnvp_masking.png>
-Package pdftex.def Info: figs/realnvp_masking.png  used on input line 185.
-(pdftex.def)             Requested size: 153.64493pt x 70.31528pt.
- [9
-
- <./figs/realnvp_masking.png>]
-[10
-
-]
-<figs/glow_faces.png, id=139, 1222.5675pt x 820.06375pt>
-File: figs/glow_faces.png Graphic file (type png)
-<use figs/glow_faces.png>
-Package pdftex.def Info: figs/glow_faces.png  used on input line 227.
-(pdftex.def)             Requested size: 276.559pt x 185.50743pt.
- [11
-
- <./figs/glow_faces.png>]
-<figs/venn_diagram.png, id=148, 1043.9pt x 392.46625pt>
-File: figs/venn_diagram.png Graphic file (type png)
-<use figs/venn_diagram.png>
-Package pdftex.def Info: figs/venn_diagram.png  used on input line 241.
-(pdftex.def)             Requested size: 307.28987pt x 115.531pt.
- [12
-
- <./figs/venn_diagram.png>]
-(./Lecture3.toc) [13
+[13
 
 ] [14
 
 ]
-Overfull \hbox (2.61206pt too wide) detected at line 294
+<figs/af_iaf_explained_2.png, id=197, 401.5pt x 274.02374pt>
+File: figs/af_iaf_explained_2.png Graphic file (type png)
+<use figs/af_iaf_explained_2.png>
+Package pdftex.def Info: figs/af_iaf_explained_2.png  used on input line 291.
+(pdftex.def)             Requested size: 96.79733pt x 66.0639pt.
+<figs/af_iaf_explained_1.png, id=198, 401.5pt x 270.00874pt>
+File: figs/af_iaf_explained_1.png Graphic file (type png)
+<use figs/af_iaf_explained_1.png>
+Package pdftex.def Info: figs/af_iaf_explained_1.png  used on input line 291.
+(pdftex.def)             Requested size: 96.79733pt x 65.09593pt.
+ [15
+
+ <./figs/af_iaf_explained_2.png> <./figs/af_iaf_explained_1.png>]
+(./Lecture3.toc) [16
+
+]
+<figs/realnvp_masking.png, id=216, 616.3025pt x 282.05376pt>
+File: figs/realnvp_masking.png Graphic file (type png)
+<use figs/realnvp_masking.png>
+Package pdftex.def Info: figs/realnvp_masking.png  used on input line 327.
+(pdftex.def)             Requested size: 153.64493pt x 70.31528pt.
+ [17
+
+ <./figs/realnvp_masking.png>] [18
+
+]
+<figs/glow_faces.png, id=231, 1222.5675pt x 820.06375pt>
+File: figs/glow_faces.png Graphic file (type png)
+<use figs/glow_faces.png>
+Package pdftex.def Info: figs/glow_faces.png  used on input line 369.
+(pdftex.def)             Requested size: 276.559pt x 185.50743pt.
+ [19
+
+ <./figs/glow_faces.png>]
+<figs/venn_diagram.png, id=241, 1043.9pt x 392.46625pt>
+File: figs/venn_diagram.png Graphic file (type png)
+<use figs/venn_diagram.png>
+Package pdftex.def Info: figs/venn_diagram.png  used on input line 383.
+(pdftex.def)             Requested size: 307.28987pt x 115.531pt.
+ [20
+
+ <./figs/venn_diagram.png>] (./Lecture3.toc) [21
+
+] [22
+
+]
+Overfull \hbox (2.61206pt too wide) detected at line 436
 [] \OT1/cmss/m/n/10.95 = \OT1/cmss/bx/n/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/cmss
 /bx/n/10.95 z\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/1
 0.95 )\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/10.95 )
@@ -1414,44 +1460,40 @@ cmsy/m/n/10.95 ^^A \OT1/cmss/bx/n/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/cmss/bx/n/
 \OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 t\OT1/cmss/m/n/10.95 )
  []
 
-<figs/euler.png, id=171, 413.545pt x 323.2075pt>
+<figs/euler.png, id=266, 413.545pt x 323.2075pt>
 File: figs/euler.png Graphic file (type png)
 <use figs/euler.png>
-Package pdftex.def Info: figs/euler.png  used on input line 294.
+Package pdftex.def Info: figs/euler.png  used on input line 436.
 (pdftex.def)             Requested size: 86.03946pt x 67.24431pt.
-<figs/resnet_vs_neural_ode.png, id=172, 443.6575pt x 302.12875pt>
+<figs/resnet_vs_neural_ode.png, id=267, 443.6575pt x 302.12875pt>
 File: figs/resnet_vs_neural_ode.png Graphic file (type png)
 <use figs/resnet_vs_neural_ode.png>
-Package pdftex.def Info: figs/resnet_vs_neural_ode.png  used on input line 294.
+Package pdftex.def Info: figs/resnet_vs_neural_ode.png  used on input line 436.
 
 (pdftex.def)             Requested size: 165.93709pt x 112.99834pt.
-[15
+[23
 
  <./figs/euler.png> <./figs/resnet_vs_neural_ode.png>]
-<figs/cnf_flow.png, id=181, 390.45876pt x 467.7475pt>
+<figs/cnf_flow.png, id=276, 390.45876pt x 467.7475pt>
 File: figs/cnf_flow.png Graphic file (type png)
 <use figs/cnf_flow.png>
-Package pdftex.def Info: figs/cnf_flow.png  used on input line 320.
+Package pdftex.def Info: figs/cnf_flow.png  used on input line 462.
 (pdftex.def)             Requested size: 122.91406pt x 147.2413pt.
- [16
+ [24
 
- <./figs/cnf_flow.png>] [17
+ <./figs/cnf_flow.png>] [25
 
-] [18
+] [26
 
 ]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 378.
-
-
-Overfull \vbox (2.885pt too high) detected at line 378
+Overfull \vbox (2.885pt too high) detected at line 520
  []
 
-[19
+[27
 
-] [20
+] [28
 
-] [21
+] [29
 
 ]
 \tf@nav=\write7
@@ -1474,16 +1516,16 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.83pt have occurred.
 
 Package rerunfilecheck Info: File `Lecture3.out' has not changed.
-(rerunfilecheck)             Checksum: 53377932CCF48886FC902C2EE1D914D6;393.
+(rerunfilecheck)             Checksum: C3219D6300A6BC235C0ABE8F2CB82E0A;886.
  ) 
 Here is how much of TeX's memory you used:
- 28832 strings out of 474116
- 589194 string characters out of 5743682
+ 28974 strings out of 474116
+ 592341 string characters out of 5743682
  1943187 words of memory out of 5000000
- 50504 multiletter control sequences out of 15000+600000
- 583866 words of font info for 120 fonts, out of 8000000 for 9000
+ 50620 multiletter control sequences out of 15000+600000
+ 585204 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,18n,126p,436b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,18n,126p,436b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -1505,10 +1547,10 @@ r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on Lecture3.pdf (21 pages, 2664105 bytes).
+Output written on Lecture3.pdf (29 pages, 2895416 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 

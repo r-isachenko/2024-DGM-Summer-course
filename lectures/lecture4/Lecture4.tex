@@ -9,6 +9,66 @@
 \end{frame}
 %=======
 \begin{frame}{Recap of previous lecture}
+	\vspace{-0.5cm}
+	\begin{block}{Flow log-likelihood}
+		\vspace{-0.3cm}
+		\[
+			\log p(\bx|\btheta) = \log p(\bff_{\btheta}(\bx)) + \log  |\det (\bJ_\bff)|
+		\]
+		\vspace{-0.5cm}
+	\end{block}
+	The main challenge is a determinant of the Jacobian.
+	\begin{block}{Linear flows}	
+		\vspace{-0.2cm}
+		\[
+			\bz = \bff_{\btheta}(\bx) = \bW \bx, \quad \bW \in \bbR^{m \times m}, \quad \btheta = \bW, \quad \bJ_\bff = \bW^T
+		\]
+	\end{block}
+	\vspace{-0.3cm}
+	\begin{itemize}
+		\item LU-decomposition
+		\[
+			\bW = \mathbf{P} \bL \bU.
+		\]
+		\item QR-decomposition
+		\[
+			\bW = \bQ \mathbf{R}.
+		\]
+	\end{itemize}
+	Decomposition should be done only once in the beggining. Next, we fit decomposed matrices ($\bP/\bL/\bU$ or $\bQ/\bR$).
+	\myfootnote{\href{https://arxiv.org/abs/1807.03039}{Kingma D. P., Dhariwal P. Glow: Generative Flow with Invertible 1x1 Convolutions, 2018}  \\
+	\href{https://arxiv.org/abs/1901.11137}{Hoogeboom E., et al. Emerging convolutions for generative normalizing flows, 2019}
+	}
+\end{frame}
+%=======
+\begin{frame}{Recap of previous lecture}
+	Consider an autoregressive model
+	\vspace{-0.3cm}
+	{\small
+		\[
+		p(\bx | \btheta) = \prod_{j=1}^m p(x_j | \bx_{1:j - 1}, \btheta), \quad
+		p(x_j | \bx_{1:j - 1}, \btheta) = \mathcal{N} \left(\mu_j(\bx_{1:j-1}), \sigma^2_j (\bx_{1:j-1})\right).
+		\]
+	}
+	\vspace{-0.5cm}
+	\begin{block}{Gaussian autoregressive NF}
+		\vspace{-0.5cm}
+		\begin{align*}
+			\bx &= \bg_{\btheta}(\bz) \quad \Rightarrow \quad {\color{violet} x_j} = \sigma_j ({\color{violet} \bx_{1:j-1}}) \cdot {\color{teal} z_j} + \mu_j({\color{violet} \bx_{1:j-1}}). \\
+			\bz &= \bff_{\btheta}(\bx) \quad \Rightarrow \quad {\color{teal} z_j} = \left({\color{violet}x_j} - \mu_j({\color{violet}\bx_{1:j-1}}) \right) \cdot \frac{1}{ \sigma_j ({\color{violet}\bx_{1:j-1}})}.
+		\end{align*}
+		\vspace{-0.5cm}
+	\end{block}
+	\begin{itemize}
+		\item We have an \textbf{invertible} and \textbf{differentiable} transformation from $p(\bz)$ to $p(\bx | \btheta)$.
+		\item Jacobian of such transformation is triangular!
+	\end{itemize}
+	Generation function $\bg_{\btheta}(\bz)$ is \textbf{sequential}. \\ Inference function $\bff_{\btheta}(\bx)$ is \textbf{not sequential}.
+	
+	\myfootnotewithlink{https://arxiv.org/abs/1705.07057}{Papamakarios G., Pavlakou T., Murray I. Masked Autoregressive Flow for Density Estimation, 2017} 
+\end{frame}
+%=======
+\begin{frame}{Recap of previous lecture}
 	Let split $\bx$ and $\bz$ in two parts: 
 	\[
 	\bx = [\bx_1, \bx_2] = [\bx_{1:d}, \bx_{d+1:m}]; \quad \bz = [\bz_1, \bz_2] = [\bz_{1:d}, \bz_{d+1:m}].

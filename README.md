@@ -29,9 +29,9 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |  |  | <b>Seminar 1:</b> Introduction. Maximum likelihood estimation. Histograms. Bayes theorem. | [slides](seminars/seminar1/seminar1.ipynb) |
 | 2 | June, 27 | <b>Lecture 2:</b> Autoregressive models (PixelCNN). Normalizing Flow (NF) intuition and definition. Forward and reverse KL divergence for NF. Linear NF. Gaussian autoregressive NF. | [slides](lectures/lecture2/Lecture2.pdf) |
 |  |  | <b>Seminar 2:</b> PixelCNN. | [slides](seminars/seminar2/seminar2.ipynb) <a href="https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/seminars/seminar2/seminar2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>|
-<!---
-| 3 | July, 2 | <b>Lecture 3:</b> Coupling layer (RealNVP). Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. | [slides](lectures/lecture3/Lecture3.pdf) |
+| 3 | July, 2 | <b>Lecture 3:</b> Linear NF. Gaussian autoregressive NF. Coupling layer (RealNVP). Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. | [slides](lectures/lecture3/Lecture3.pdf) |
 |  |  | <b>Seminar 3:</b> Planar and Radial Flows. Forward vs Reverse KL. | [slides](seminars/seminar3/seminar3.ipynb) |
+<!---
 | 4 | July, 4 | <b>Lecture 4:</b> Adjoint method for continuous-in-time NF. Latent Variable Models (LVM). Variational lower bound (ELBO). | [slides](lectures/lecture4/Lecture4.pdf) |
 |  |  | <b>Seminar 4:</b> RealNVP. | [slides](seminars/seminar4/real_nvp_notes.ipynb) |
 | 5 | July, 9 | <b>Lecture 5:</b> Variational EM-algorithm. Amortized inference, ELBO gradients, reparametrization trick. Variational Autoencoder (VAE). NF as VAE model. | [slides](lectures/lecture5/Lecture5.pdf) |

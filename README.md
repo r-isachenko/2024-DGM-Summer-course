@@ -29,12 +29,12 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |  |  | <b>Seminar 1:</b> Introduction. Maximum likelihood estimation. Histograms. Bayes theorem. | [slides](seminars/seminar1/seminar1.ipynb) |
 | 2 | June, 27 | <b>Lecture 2:</b> Autoregressive models (PixelCNN). Normalizing Flow (NF) intuition and definition. Forward and reverse KL divergence for NF. Linear NF. Gaussian autoregressive NF. | [slides](lectures/lecture2/Lecture2.pdf) |
 |  |  | <b>Seminar 2:</b> PixelCNN. | [slides](seminars/seminar2/seminar2.ipynb) <a href="https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/seminars/seminar2/seminar2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>|
-| 3 | July, 2 | <b>Lecture 3:</b> Linear NF. Gaussian autoregressive NF. Coupling layer (RealNVP). Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. | [slides](lectures/lecture3/Lecture3.pdf) |
+| 3 | July, 2 | <b>Lecture 3:</b> Linear NF. Gaussian autoregressive NF. Coupling layer (RealNVP).  | [slides](lectures/lecture3/Lecture3.pdf) |
 |  |  | <b>Seminar 3:</b> Planar and Radial Flows. Forward vs Reverse KL. | [slides](seminars/seminar3/seminar3.ipynb)  <a href="https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/seminars/seminar3/seminar3.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> PlanarFlow notebook: <a href="https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/seminars/seminar3/planar_flow.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>|
-<!---
-| 4 | July, 4 | <b>Lecture 4:</b> Adjoint method for continuous-in-time NF. Latent Variable Models (LVM). Variational lower bound (ELBO). | [slides](lectures/lecture4/Lecture4.pdf) |
+| 4 | July, 4 | <b>Lecture 4:</b> Latent Variable Models (LVM). Variational lower bound (ELBO). Variational EM-algorithm. Amortized inference, ELBO gradients, reparametrization trick. | [slides](lectures/lecture4/Lecture4.pdf) |
 |  |  | <b>Seminar 4:</b> RealNVP. | [slides](seminars/seminar4/real_nvp_notes.ipynb) |
-| 5 | July, 9 | <b>Lecture 5:</b> Variational EM-algorithm. Amortized inference, ELBO gradients, reparametrization trick. Variational Autoencoder (VAE). NF as VAE model. | [slides](lectures/lecture5/Lecture5.pdf) |
+<!---
+| 5 | July, 9 | <b>Lecture 5:</b> Variational Autoencoder (VAE). NF as VAE model. | [slides](lectures/lecture5/Lecture5.pdf) |
 |  |  | <b>Seminar 5:</b> Gaussian Mixture Model (GMM). GMM and MLE. ELBO and EM-algorithm. GMM via EM-algorithm. Variational EM algorithm for GMM. | [slides](seminars/seminar5/seminar5.ipynb) |
 | 6 | July, 11 | <b>Lecture 6:</b> Discrete VAE latent representations. Vector quantization, straight-through gradient estimation (VQ-VAE). Gumbel-softmax trick (DALL-E). ELBO surgery and optimal VAE prior.  | [slides](lectures/lecture6/Lecture6.pdf) |
 |  |  | <b>Seminar 6:</b>  VAE: Implementation hints. Vanilla 2D VAE coding. VAE on Binarized MNIST visualization. | [slides](seminars/seminar6/seminar6.ipynb) |
@@ -50,7 +50,7 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |  |  | <b>Seminar 11:</b> Noise Conditioned Score Network (NCSN). Gaussian diffusion model as VAE. | [slides](seminars/seminar11/seminar11.ipynb) |
 | 12 | August, 2 | <b>Lecture 12:</b> Denoising diffusion probabilistic model (DDPM): overview. Denoising diffusion as score-based generative model. Model guidance: classifier guidance, classfier-free guidance. | [slides](lectures/lecture12/Lecture12.pdf) |
 |  |  | <b>Seminar 12:</b> Denoising diffusion probabilistic model (DDPM). Denoising Diffusion Implicit Models (DDIM). | [slides](seminars/seminar11/seminar11.ipynb) |
-| 13 | August, 6 | <b>Lecture 13:</b> SDE basics. Kolmogorov-Fokker-Planck equation. Probability flow ODF. Reverse SDE. Variance Preserving and Variance Exploding SDEs. | [slides](lectures/lecture13/Lecture13.pdf) |
+| 13 | August, 6 | <b>Lecture 13:</b> Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. Adjoint method for continuous-in-time NF. SDE basics. Kolmogorov-Fokker-Planck equation. Probability flow ODF. Reverse SDE. Variance Preserving and Variance Exploding SDEs. | [slides](lectures/lecture13/Lecture13.pdf) |
 |  |  | <b>Seminar 13:</b> Guidance. CLIP, GLIDE, DALL-E 2, Imagen, Latent Diffusion Model. | [slides](seminars/seminar13/seminar13.ipynb) |
 --->
 

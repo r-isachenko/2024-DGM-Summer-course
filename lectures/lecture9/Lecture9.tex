@@ -9,32 +9,6 @@
 \end{frame}
 %=======
 \begin{frame}{Recap of previous lecture}
-	\begin{block}{Main problems of standard GAN}
-		\begin{itemize}
-			\item Vanishing gradients (solution: non-saturating GAN);
-			\item Mode collapse (caused by Jensen-Shannon divergence).
-		\end{itemize}
-	\end{block}
-	\begin{block}{Standard GAN}
-		\vspace{-0.2cm}
-		\[
-		\min_{\btheta} \max_{\bphi} \left[ \bbE_{\pi(\bx)} \log D_{\bphi}(\bx) + \bbE_{p(\bz)} \log (1 - D_{\bphi}(\bG_{\btheta}(\bz))) \right]
-		\]
-		\vspace{-0.4cm}
-	\end{block}
-	\vspace{-0.1cm}
-	\begin{block}{Informal theoretical results}
-		The real images distribution $\pi(\bx)$ and the generated images distribution $p(\bx | \btheta)$ are low-dimensional and have disjoint supports. In this case
-		\vspace{-0.3cm}
-		\[
-		KL(\pi || p) = KL(p || \pi) = \infty, \quad JSD(\pi || p) = \log 2.
-		\]
-	\end{block}
-	\myfootnote{\href{https://arxiv.org/abs/1406.2661}{Goodfellow I. J. et al. Generative Adversarial Networks, 2014} \\
-		\href{https://arxiv.org/abs/1701.04862}{Arjovsky M., Bottou L. Towards Principled Methods for Training Generative Adversarial Networks, 2017}}
-\end{frame}
-%=======
-\begin{frame}{Recap of previous lecture}
 	\begin{block}{Wasserstein distance}
 		\vspace{-0.5cm}
 		\[

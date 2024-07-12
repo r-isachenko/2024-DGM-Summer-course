@@ -35,12 +35,12 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |  |  | <b>Seminar 4:</b> RealNVP. | [slides](seminars/seminar4/real_nvp_notes.ipynb) |
 | 5 | July, 9 | <b>Lecture 5:</b> ELBO gradients, reparametrization trick. Variational Autoencoder (VAE). NF as VAE model. ELBO surgery and optimal VAE prior. | [slides](lectures/lecture5/Lecture5.pdf) |
 |  |  | <b>Seminar 5:</b> Gaussian Mixture Model (GMM). GMM and MLE. ELBO and EM-algorithm. GMM via EM-algorithm. Variational EM algorithm for GMM. | [slides](seminars/seminar5/seminar5.ipynb) |
-| 6 | July, 11 | <b>Lecture 6:</b> NF-based VAE prior. Discrete VAE latent representations. Vector quantization, straight-through gradient estimation (VQ-VAE). Gumbel-softmax trick (DALL-E). | [slides](lectures/lecture6/Lecture6.pdf) |
+| 6 | July, 11 | <b>Lecture 6:</b> NF-based VAE prior. Discrete VAE latent representations. Vector quantization, straight-through gradient estimation (VQ-VAE). | [slides](lectures/lecture6/Lecture6.pdf) |
 |  |  | <b>Seminar 6:</b>  VAE: Implementation hints. Vanilla 2D VAE coding. VAE on Binarized MNIST visualization. | [slides](seminars/seminar6/seminar6.ipynb) |
 <!---
-| 7 | July, 16 | <b>Lecture 7:</b> Likelihood-free learning. GAN optimality theorem.  | [slides](lectures/lecture7/Lecture7.pdf) |
+| 7 | July, 16 | <b>Lecture 7:</b> Likelihood-free learning. GAN optimality theorem. Wasserstein distance. | [slides](lectures/lecture7/Lecture7.pdf) |
 |  |  | <b>Seminar 7:</b> Posterior collapse. Beta VAE on MNIST. | [slides](seminars/seminar7/seminar7.ipynb) |
-| 8 | July, 18 | <b>Lecture 8:</b> Wasserstein distance. Wasserstein GAN (WGAN). WGAN with gradient penalty (WGAN-GP). f-divergence minimization. | [slides](lectures/lecture8/Lecture8.pdf) |
+| 8 | July, 18 | <b>Lecture 8:</b> Wasserstein GAN (WGAN). WGAN with gradient penalty (WGAN-GP). f-divergence minimization. | [slides](lectures/lecture8/Lecture8.pdf) |
 |  |  | <b>Seminar 8:</b> KL vs JS divergences. Vanilla GAN in 1D coding. Mode collapse and vanishing gradients. Non-saturating GAN. | [slides](seminars/seminar8/seminar8.ipynb) |
 | 9 | July, 23 | <b>Lecture 9:</b> GAN evaluation. FID, MMD, Precision-Recall, truncation trick. Langevin dynamic. Score matching. | [slides](lectures/lecture9/Lecture9.pdf) |
 |  |  | <b>Seminar 9:</b> WGAN and WGAN-GP on 1D data. | [slides](seminars/seminar9/seminar9.ipynb) |

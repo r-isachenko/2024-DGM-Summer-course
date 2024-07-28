@@ -158,7 +158,7 @@
 		\vspace{-0.7cm}
 		\begin{multline*}
 			\bbE_{q(\bx_{\sigma})} h(\bx_{\sigma}) = \int {\color{violet}q(\bx_{\sigma})} h(\bx_{\sigma}) d\bx_{\sigma} = \\
-			= \int \left({\color{violet}\int q(\bx_{\sigma} | \bx) \pi(\bx) d\bx}\right) h(\bx_{\sigma}) d\bx_{\sigma} =  \bbE_{\pi(\bx)} \bbE_{q(\bx_{\sigma} | \bx)}  h(\bx_{\sigma}) d\bx_{\sigma}
+			= \int \left({\color{violet}\int q(\bx_{\sigma} | \bx) \pi(\bx) d\bx}\right) h(\bx_{\sigma}) d\bx_{\sigma} =  \bbE_{\pi(\bx)} \bbE_{q(\bx_{\sigma} | \bx)}  h(\bx_{\sigma}) 
 		\end{multline*}
 		\vspace{-0.7cm}
 		{\small
@@ -332,9 +332,7 @@
 	\myfootnotewithlink{https://arxiv.org/abs/2006.09011}{Song Y. et al. Improved Techniques for Training Score-Based Generative Models, 2020}
 \end{frame}
 %=======
-\section{Gaussian diffusion process}
-%=======
-\subsection{Forward gaussian diffusion process}
+\section{Forward gaussian diffusion process}
 %=======
 \begin{frame}{Forward gaussian diffusion process}
 	Let $\bx_0 = \bx \sim \pi(\bx)$, $\beta_t \in (0, 1)$. Define the Markov chain
@@ -407,40 +405,6 @@
 	\myfootnotewithlink{https://ayandas.me/blog-tut/2021/12/04/diffusion-prob-models.html}{Das A. An introduction to Diffusion Probabilistic Models, blog post, 2021}
 \end{frame}
 %=======
-\subsection{Denoising score matching}
-%=======
-\begin{frame}{Denoising score matching}
-	\begin{block}{NCSN} 
-		\vspace{-0.7cm} 
-		\[
-			\quad q(\bx_t | \bx_0) = \cN(\bx_0, \sigma_t^2 \cdot \bI), \quad q(\bx_1) \approx \pi(\bx), \quad q(\bx_T) \approx \cN(0, \sigma_T^2 \cdot \bI).
-		\]
-		\[
-			\nabla_{\bx_t} \log q(\bx_t | \bx) = - \frac{\bx_t - \bx}{\sigma_t^2}
-		\]
-		\vspace{-0.6cm} 
-	\end{block}
-	\begin{block}{Gaussian diffussion}
-		\vspace{-0.7cm} 
-		\[
-			q(\bx_t | \bx_0) = \cN(\sqrt{\bar{\alpha}_t} \cdot \bx_0, (1 - \bar{\alpha}_t) \cdot \bI), \quad q(\bx_1) \approx \pi(\bx), \quad q(\bx_T) \approx \cN(0, \bI)
-		\]
-		\[
-			\nabla_{\bx_t} \log q(\bx_t | \bx_0) = - \frac{\bx_t - \sqrt{\bar{\alpha}_t} \cdot \bx_0}{1 - \bar{\alpha}_t}
-		\]
-		\vspace{-0.6cm} 
-	\end{block}
-	\begin{block}{Theorem (denoising score matching)}
-	\vspace{-0.7cm}
-	\begin{multline*}
-		\bbE_{q(\bx_t)}\bigl\| \bs_{\btheta, t}(\bx_t) - \nabla_{\bx_t} \log q(\bx_t) \bigr\|^2_2 = \\
-		= \bbE_{\pi(\bx)} \bbE_{q(\bx_t | \bx)}\bigl\| \bs_{\btheta, t}(\bx_t) - \nabla_{\bx_t} \log q(\bx_t | \bx) \bigr\|^2_2 + \text{const}(\btheta)
-	\end{multline*}
-	\vspace{-0.5cm}
-	\end{block}
-	\textbf{Note:} We are able to apply NCSN approach with annealed Langevin dynamics to get diffusion denoising model.
-\end{frame}
-%=======
 \begin{frame}{Summary}
 	\begin{itemize}
 		\item Denoising score matching minimizes Fisher divergence on noisy samples. It allows to estimate Fisher divergence using samples.
@@ -448,8 +412,6 @@
 		\item Noise conditioned score network uses multiple noise levels and annealed Langevin dynamics to fit score function and sample from the model.	
 		\vfill
 		\item Gaussian diffusion process is a Markov chain that injects special form of Gaussian noise to the samples.
-		\vfill
-		\item Denoising score matching is applicable to gaussian diffusion process.
 	\end{itemize}
 \end{frame}
 %=======

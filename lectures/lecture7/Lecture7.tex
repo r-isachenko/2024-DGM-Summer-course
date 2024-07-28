@@ -403,103 +403,6 @@
 		\href{https://arxiv.org/abs/1701.04862}{Arjovsky M., Bottou L. Towards Principled Methods for Training Generative Adversarial Networks, 2017}}
 \end{frame}
 %=======
-\begin{frame}{Wasserstein distance (discrete)}
-	A.k.a. \textbf{Earth Mover's distance}.
-	\begin{block}{Optimal transport formulation}
-		The minimum cost of moving and transforming a pile of dirt in the shape of one probability distribution to the shape of the other distribution.
-	\end{block}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\linewidth]{figs/discrete_wasserstein}
-	\end{figure}
-	\myfootnotewithlink{https://udlbook.github.io/udlbook/}{Simon J.D. Prince. Understanding Deep Learning, 2023}
-\end{frame}
-%=======
-\begin{frame}{Wasserstein distance (continuous)}
-	\vspace{-0.7cm}
-	\[
-	W(\pi, p) = \inf_{\gamma \in \Gamma(\pi, p)} \bbE_{(\bx, \by) \sim \gamma} \| \bx - \by \| =  \inf_{{\color{olive}\gamma}\in {\color{teal}\Gamma(\pi, p)}} \int {\color{violet} \| \bx - \by \|} {\color{olive}\gamma (\bx, \by)} d \bx d \by
-	\]
-	\vspace{-0.4cm}
-	\begin{itemize}
-		\item ${\color{olive}\gamma (\bx, \by)}$ -- transportation plan (the amount of "dirt" that should be transported from point $\bx$ to point $\by$)
-		\vspace{-0.2cm}
-		\[
-		\int \gamma(\bx, \by) d \bx = p(\by); \quad \int \gamma(\bx, \by) d \by = \pi(\bx).
-		\]
-		\vspace{-0.6cm}
-		\item ${\color{teal}\Gamma(\pi, p)}$ -- the set of all joint distributions $\gamma (\bx, \by)$ with marginals $\pi$ and $p$.
-		\item ${\color{olive}\gamma(\bx, \by)}$ -- the amount, ${\color{violet} \| \bx - \by \|}$-- the distance.
-	\end{itemize}
-	\begin{block}{Wasserstein metric}
-		\vspace{-0.2cm}
-		\[
-		W_s(\pi, p) = \inf_{\gamma \in \Gamma(\pi, p)} \left(\bbE_{(\bx, \by) \sim \gamma} \| \bx - \by \|^s\right)^{1/s}
-		\]
-		\vspace{-0.4cm}
-	\end{block}
-	Here we will use $W(\pi, p) = W_1(\pi, p)$ that corresponds to the optimal transport formulation.
-	\myfootnotewithlink{https://arxiv.org/abs/1701.07875}{Arjovsky M., Chintala S., Bottou L. Wasserstein GAN, 2017}
-\end{frame}
-%=======
-\begin{frame}{Wasserstein distance vs KL vs JSD}
-	
-	\begin{minipage}[t]{0.48\columnwidth}
-		\vspace{0.1cm}
-		Consider 2d distributions
-		\[
-		\pi(x, y) = (0, U[0,1])
-		\]	
-		\[
-		p(x, y | \theta) = (\theta, U[0, 1])
-		\]
-	\end{minipage}%
-	\begin{minipage}[t]{0.52\columnwidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.8\linewidth]{figs/w_kl_jsd}
-		\end{figure}
-	\end{minipage}
-	\begin{itemize}
-		\footnotesize
-		\item $\theta = 0$.
-		Distributions are the same 
-		\[
-		KL(\pi || p) = KL(p || \pi) = JSD(p || \pi) = W(\pi, p) = 0
-		\]
-		\item $\theta \neq 0$
-		\[
-		KL(\pi || p) = \int_{U[0, 1]} 1 \log \frac{1}{0} d y = \infty = KL(p || \pi)
-		\]
-		\[
-		JSD(\pi || p) = \frac{1}{2}\left( \int_{U[0, 1]}1 \log \frac{1}{1/2} dy + \int_{U[0, 1]}1 \log \frac{1}{1/2} dy \right) = \log 2
-		\]
-		\[
-		W(\pi, p) = |\theta|
-		\]
-	\end{itemize}
-	
-	\myfootnote{\href{https://arxiv.org/abs/1904.08994}{Weng L. From GAN to WGAN, 2019} \\ 
-		\href{https://arxiv.org/abs/1701.07875}{Arjovsky M., Chintala S., Bottou L. Wasserstein GAN, 2017}}
-\end{frame}
-%=======
-\begin{frame}{Wasserstein distance vs KL vs JSD}
-	\begin{block}{Theorem 1}
-		Let $\bG_{\btheta}(\bz)$ be (almost) any feedforward neural network, and $p(\bz)$ a prior over $\bz$ such that $\bbE_{p(\bz)} \|\bz\| < \infty$. Then therefore $W(\pi, p)$ is continuous everywhere and differentiable almost everywhere.
-	\end{block}
-	\begin{block}{Theorem 2}
-		Let $\pi$ be a distribution on a compact space $\cX$ and $\{p_t\}_{t=1}^\infty$ be a sequence of distributions on $\cX$. 
-		\begin{align}
-			KL(\pi || p_t) &\rightarrow 0 \, (\text{or }KL (p_t || \pi) \rightarrow 0) \\
-			JSD(\pi || p_t) &\rightarrow 0 \\
-			W(\pi || p_t) &\rightarrow 0
-		\end{align}
-		
-		Then, considering limits as $t \rightarrow \infty$, (1) implies (2), (2) implies (3).
-	\end{block}
-	\myfootnotewithlink{https://arxiv.org/abs/1701.07875}{Arjovsky M., Chintala S., Bottou L. Wasserstein GAN, 2017}
-\end{frame}
-%=======
 \begin{frame}{Summary}
 	\begin{itemize}
 		\item Likelihood is not a perfect criteria to measure quality of generative model.		
@@ -511,8 +414,6 @@
 		\item Mode collapse is one of the main problems of vanilla GAN.  Lots of tips and tricks has to be used to make the GAN training is stable and scalable.
 		\vfill
 		\item KL and JS divergences work poorly as model objective in the case of disjoint supports.
-		\vfill
-		\item Earth-Mover distance is a more appropriate objective function for distribution matching problem.	
 	\end{itemize}
 \end{frame}
 \end{document} 

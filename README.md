@@ -59,15 +59,16 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |---------|------|-------------|--------|-------|
 | 1 | July, 3 | July, 17 | <ol><li>Theory (alpha-divergences, curse of dimensionality, NF expressivity).</li><li>ImageGPT on MNIST.</li><li>RealNVP on CIFAR10.</li></ol> | [![Open In Github](https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=Open%20in%20Github&color=lightgrey)](homeworks/hw1.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/homeworks/hw1.ipynb) |
 | 2 | July, 17 | July, 31 | <ol><li>Theory (IWAE theory, Conjugate functions, FID for Normal distributions).</li><li>ResNetVAE on CIFAR10.</li><li>WGAN/WGAN-GP on CIFAR10.</li></ol> | [![Open In Github](https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=Open%20in%20Github&color=lightgrey)](homeworks/hw2.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/homeworks/hw2.ipynb) |
+| 3 | July, 31 | August, 14 | <ol><li>Theory (Gaussian diffusion, Implicit score matching, KFP theorem).</li><li>Denoising score matching on 2D data.</li><li>DDPM on 2d data.</li></ol> | [![Open In Github](https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=Open%20in%20Github&color=lightgrey)](homeworks/hw3.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r-isachenko/2024-DGM-Summer-course/blob/main/homeworks/hw3.ipynb) |
 <!---
-| 3 | July, 31 | August, 14 | <ol><li>Theory (IWAE theory, MI in ELBO surgery, Gumbel-Max trick).</li><li>ResNetVAE on CIFAR10.</li><li>VQ-VAE with PixelCNN prior.</li></ol> | [![Open In Github](https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=Open%20in%20Github&color=lightgrey)](homeworks/hw3.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r-isachenko/2024-DGM-AIMasters-course/blob/main/homeworks/hw3.ipynb) |
 --->
 
+
 ## Game rules
-- 6 homeworks each of 13 points = **78 points**
-- oral cozy exam = **26 points**
-- maximum points: 78 + 26 = **104 points**
-### Final grade: `floor(relu(#points/8 - 2))`
+- 3 homeworks each of 20 points = **60 points**
+- oral cozy exam = **20 points**
+- maximum points: 60 + 40 = **80 points**
+### Course completion criteria: `#points > 40`
 
 ## Prerequisities
 - probability theory + statistics

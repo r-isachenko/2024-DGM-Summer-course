@@ -45,12 +45,12 @@ The course is accompanied by practical tasks that allow you to understand the pr
 |  |  | <b>Seminar 9:</b> WGAN and WGAN-GP on 1D data. | [slides](seminars/seminar9/seminar9.ipynb) |
 | 10 | July, 25 | <b>Lecture 10:</b> Denoising score matching. Noise Conditioned Score Network (NCSN). Forward gaussian diffusion process: forward. | [slides](lectures/lecture10/Lecture10.pdf) |
 |  |  | <b>Seminar 10:</b> StyleGAN. | [slides](seminars/seminar10/StyleGAN.ipynb) |
-<!---
-| 11 | July, 30 | <b>Lecture 11:</b> Gaussian diffusion model as VAE, derivation of ELBO. Reparametrization of gaussian diffusion model. | [slides](lectures/lecture11/Lecture11.pdf) |
+| 11 | July, 30 | <b>Lecture 11:</b> Gaussian diffusion model as VAE, derivation of ELBO. | [slides](lectures/lecture11/Lecture11.pdf) |
 |  |  | <b>Seminar 11:</b> Noise Conditioned Score Network (NCSN). Gaussian diffusion model as VAE. | [slides](seminars/seminar11/seminar11.ipynb) |
-| 12 | August, 2 | <b>Lecture 12:</b> Denoising diffusion probabilistic model (DDPM): overview. Denoising diffusion as score-based generative model. Model guidance: classifier guidance, classfier-free guidance. | [slides](lectures/lecture12/Lecture12.pdf) |
+| 12 | August, 2 | <b>Lecture 12:</b> Reparametrization of gaussian diffusion model. Denoising diffusion probabilistic model (DDPM): overview. Denoising diffusion as score-based generative model. Model guidance. | [slides](lectures/lecture12/Lecture12.pdf) |
 |  |  | <b>Seminar 12:</b> Denoising diffusion probabilistic model (DDPM). Denoising Diffusion Implicit Models (DDIM). | [slides](seminars/seminar11/seminar11.ipynb) |
-| 13 | August, 6 | <b>Lecture 13:</b> Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. Adjoint method for continuous-in-time NF. SDE basics. Kolmogorov-Fokker-Planck equation. Probability flow ODF. Reverse SDE. Variance Preserving and Variance Exploding SDEs. | [slides](lectures/lecture13/Lecture13.pdf) |
+<!---
+| 13 | August, 6 | <b>Lecture 13:</b> Model guidance: classifier guidance, classfier-free guidance. Continuous-in-time NF and neural ODE. Kolmogorov-Fokker-Planck equation for NF log-likelihood. FFJORD and Hutchinson's trace estimator. Adjoint method for continuous-in-time NF. SDE basics. Kolmogorov-Fokker-Planck equation. Probability flow ODF. Reverse SDE. Variance Preserving and Variance Exploding SDEs. | [slides](lectures/lecture13/Lecture13.pdf) |
 |  |  | <b>Seminar 13:</b> Guidance. CLIP, GLIDE, DALL-E 2, Imagen, Latent Diffusion Model. | [slides](seminars/seminar13/seminar13.ipynb) |
 --->
 
